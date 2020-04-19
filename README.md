@@ -8,18 +8,18 @@ This stack is available to anyone at no cost, but on an as-is basis. 0x4447, LLC
 
 # How to deploy
 
-<a target="_blank" href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=zer0x4447-XXX&templateURL=https://s3.amazonaws.com/0x4447-drive-cloudformation/XXX.json">
+<a target="_blank" href="https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=zer0x4447-SMTP&templateURL=https://s3.amazonaws.com/0x4447-drive-cloudformation/SMTP.json">
 <img align="left" style="float: left; margin: 0 10px 0 0;" src="https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png"></a>
 
-All you need to do to deploy this stack is click the button to the left and follow the instructions that CloudFormation provides in your AWS Dashboard. Alternatively you can download the CF file from [here](https://s3.amazonaws.com/0x4447-drive-cloudformation/XXX.json).
+All you need to do to deploy this stack is click the button to the left and follow the instructions that CloudFormation provides in your AWS Dashboard. Alternatively you can download the CF file from [here](https://s3.amazonaws.com/0x4447-drive-cloudformation/SMTP.json).
 
 # What will deploy?
 
-![XXX Diagram](https://raw.githubusercontent.com/0x4447/0x4447-product-XXX/assets/diagram.png)
+![SMTP Diagram](https://raw.githubusercontent.com/0x4447/0x4447-product-SMTP/assets/diagram.png)
 
 List me
 
-All project resources can be found [here](https://github.com/topics/0x4447-product-XXX).
+All project resources can be found [here](https://github.com/topics/0x4447-product-SMTP).
 
 # Auto deploy
 

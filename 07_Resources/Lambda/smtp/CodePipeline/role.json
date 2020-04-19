@@ -1,8 +1,8 @@
 {
-	"CodePipelineXXXRole": {
+	"CodePipelineSMTPRole": {
 		"Type": "AWS::IAM::Role",
 		"Properties": {
-			"RoleName": "lambda_xxx_codepipeline",
+			"RoleName": "lambda_smtp_codepipeline",
 			"AssumeRolePolicyDocument": {
 				"Version": "2012-10-17",
 				"Statement": [

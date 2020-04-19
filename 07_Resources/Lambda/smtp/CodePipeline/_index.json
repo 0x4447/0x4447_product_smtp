@@ -1,14 +1,14 @@
 {
-	"CodePipelineXXX": {
+	"CodePipelineSMTP": {
 		"Type": "AWS::CodePipeline::Pipeline",
-		"DependsOn": "CodePipelineXXXRole",
+		"DependsOn": "CodePipelineSMTPRole",
 		"Properties": {
-			"Name": "lambda_xxx",
+			"Name": "lambda_smtp",
 			"ArtifactStore": {
 				"Location": { "Ref": "CodePipelineArtifactsParam" },
 				"Type": "S3"
 			},
-			"RoleArn": { "Fn::GetAtt": ["CodePipelineXXXRole", "Arn" ] },
+			"RoleArn": { "Fn::GetAtt": ["CodePipelineSMTPRole", "Arn" ] },
 			"Stages": [
 				{
 					"Name": "Get",
@@ -23,8 +23,8 @@
 								"Version": "1"
 							},
 							"Configuration": {
-								"Owner": "Retireryte",
-								"Repo": "Rr-Lambda-Generator-Avatar",
+								"Owner": "0x4447",
+								"Repo": "0x4447_product_smtp_lambda",
 								"Branch": { "Ref": "StageParam" },
 								"PollForSourceChanges": false,
 								"OAuthToken": { "Ref": "GitHubTokenParam" }

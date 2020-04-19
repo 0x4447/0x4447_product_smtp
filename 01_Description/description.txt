@@ -1,1 +1,1 @@
-Describe me!
+This CloudFormation file will deploy a stack which sends emails based on notifications sent by S3 to a lambda function triggered by the object PUT action in S3.

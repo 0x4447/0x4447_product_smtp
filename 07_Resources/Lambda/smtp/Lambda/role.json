@@ -1,8 +1,8 @@
 {
-	"LambdaXXXRole": {
+	"LambdaSMTPRole": {
 		"Type": "AWS::IAM::Role",
 		"Properties": {
-			"RoleName": "lambda_xxx_lambda",
+			"RoleName": "lambda_smtp_lambda",
 			"AssumeRolePolicyDocument": {
 				"Version": "2012-10-17",
 				"Statement": [

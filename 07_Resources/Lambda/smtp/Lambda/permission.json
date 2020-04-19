@@ -1,0 +1,10 @@
+{
+	"LambdaSMTPPermission": {
+		"Type": "AWS::Lambda::Permission",
+		"Properties": {
+			"Action": "lambda:InvokeFunction",
+			"FunctionName": { "Ref": "LambdaSMTP" },
+			"Principal": "s3.amazonaws.com"
+		}
+	}
+}

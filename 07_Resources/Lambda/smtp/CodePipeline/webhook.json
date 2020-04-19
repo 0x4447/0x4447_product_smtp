@@ -1,5 +1,5 @@
 {
-	"CodePipelineXXXWebhook": {
+	"CodePipelineSMTPWebhook": {
 		"Type": "AWS::CodePipeline::Webhook",
 		"Properties": {
 			"Authentication": "GITHUB_HMAC",
@@ -12,9 +12,9 @@
 					"MatchEquals": "refs/heads/{Branch}"
 				}
 			],
-			"TargetPipeline": { "Ref": "CodePipelineXXX" },
+			"TargetPipeline": { "Ref": "CodePipelineSMTP" },
 			"TargetAction": "Material",
-			"TargetPipelineVersion": { "Fn::GetAtt": [ "CodePipelineXXX", "Version" ]},
+			"TargetPipelineVersion": { "Fn::GetAtt": [ "CodePipelineSMTP", "Version" ]},
 			"RegisterWithThirdParty": true
 		}
 	}

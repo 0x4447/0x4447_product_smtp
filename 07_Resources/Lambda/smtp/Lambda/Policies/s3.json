@@ -1,9 +1,9 @@
 {
-	"LambdaXXXPolicyS3": {
+	"LambdaSMTPPolicyS3": {
 		"Type": "AWS::IAM::Policy",
 		"Properties": {
 			"PolicyName": "s3",
-			"Roles": [ { "Ref": "LambdaXXXRole" } ],
+			"Roles": [ { "Ref": "LambdaSMTPRole" } ],
 			"PolicyDocument": {
 				"Version": "2012-10-17",
 				"Statement": [
