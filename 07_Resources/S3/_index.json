@@ -2,7 +2,7 @@
     "S3SMTP": {
         "Type" : "AWS::S3::Bucket",
         "Properties" : {
-            "BucketName" : "0x4447-development-smtp",
+            "BucketName" : { "Fn::Sub": "${CompanyNameParam}-${AWSAccountNameParam}-${AWS::Region}-smtp" },
             "NotificationConfiguration" : {
                 "LambdaConfigurations" : [
                     {
