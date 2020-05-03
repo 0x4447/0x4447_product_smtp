@@ -1,6 +1,8 @@
-# Title me
+# S3 SMTP
 
-Describe me
+This small project will deploy a S3 bucket with a trigger set to invoke a Lambda function, which will get the object that trigered it, red the content, and based on that create email and send it out the the right recipient. 
+
+Ideal for small websites that have a simple contact form. You create and save a object to S3, and then this project will do the rest for you.
 
 # DISCLAIMER!
 
@@ -17,21 +19,30 @@ All you need to do to deploy this stack is click the button to the left and foll
 
 ![SMTP Diagram](https://raw.githubusercontent.com/0x4447/0x4447_product_smtp/assets/diagram.png)
 
-List me
+- 1x Lambda
+- 1x CodePipeline
+- 1x CodeBuild
+- 1x S3 Bucket
+- 3x Roles
+- 2x Policies
 
 All project resources can be found [here](https://github.com/topics/0x4447-product-SMTP).
 
-# Auto deploy
-
-The stack is set up in a such a way that any time new code is pushed to a selected branch, the CodePipeline picks up the change and updates the Lambda for you. These are the available branches:
-
 # Manual work
 
-Work me
+You'll have to configure SES to allow it to send emails out. Either by confirming a domain that you own, or individual emails. In this case it should be just yours.
 
 # Pricing
 
-Price me.
+All resources deployed via this stack will potentially cost you money. But you'd have to do the following for this to happen:
+
+- Invoke Lambdas over 1,000,000 times a month
+- Send and receive over 1000 emails a month
+- Perform over 10,000 Get and Put operations and over 2000 Delete operations in your S3 Bucket
+- Exceed 100 build minutes on CodeBuild
+- $1 per active CodePipeline (must run at least once a month to be considered active)
+
+The only payment you'll encounter from Day One is S3 storage fee for emails and CodePipeline artifacts.
 
 # How to generate the CloudFormation file
 
