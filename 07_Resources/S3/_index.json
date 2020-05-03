@@ -10,7 +10,17 @@
                         "Function" : { "Fn::GetAtt" : [ "LambdaSMTP", "Arn" ] }
                     }
                 ]
-            }
+            },
+            "CorsConfiguration": {
+				"CorsRules": [
+					{
+						"AllowedHeaders": ["*"],
+						"AllowedMethods": ["PUT"],
+						"AllowedOrigins": ["*"],
+						"MaxAge": 3000
+					}
+				]
+			}
           }
       }
 }
