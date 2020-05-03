@@ -15,7 +15,7 @@ All you need to do to deploy this stack is click the button to the left and foll
 
 # What will deploy?
 
-![SMTP Diagram](https://raw.githubusercontent.com/0x4447/0x4447_product_smtp/blob/assets/diagram.png)
+![SMTP Diagram](https://raw.githubusercontent.com/0x4447/0x4447_product_smtp/assets/diagram.png)
 
 List me
 
