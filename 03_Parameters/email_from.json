@@ -1,0 +1,6 @@
+{
+	"EmailFromParam": {
+		"Description": "The email where from the page cntact will be sent, it can be any email verified in SES.",
+		"Type": "String"
+	}
+}

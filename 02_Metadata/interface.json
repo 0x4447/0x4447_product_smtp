@@ -19,7 +19,8 @@
                         "default": "Application"
                     },
                     "Parameters": [
-                        "EmailToParam"
+                        "EmailToParam",
+                        "EmailFromParam"
                     ]
                 }
             ],
@@ -29,7 +30,9 @@
                 "StageParam": { "default": "Stage" },
                 "AutoDeployParam": { "default": "Auto Deployment" },
                 "CompanyNameParam": { "default": "Company Name" },
-                "AWSAccountNameParam": { "default": "Account Name" }
+                "AWSAccountNameParam": { "default": "Account Name" },
+                "EmailFromParam": { "default": "Email From" },
+                "EmailToParam": { "default": "Email To" }
             }
         }
 }

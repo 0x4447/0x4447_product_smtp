@@ -14,7 +14,8 @@
 			"Environment": {
 				"Variables": {
 					"STAGE": { "Ref": "StageParam" },
-					"EMAIL_TO": { "Ref": "EmailToParam" }
+					"EMAIL_TO": { "Ref": "EmailToParam" },
+					"EMAIL_FROM": { "Ref": "EmailFromParam" }
 				}
 			}
 		}
