@@ -1,0 +1,6 @@
+{
+	"S3BucketNameOutput": {
+		"Value": { "Ref": "S3SMTP" },
+		"Description": "The bucket name where you should put all the emails from the contact forms."
+	}
+}
