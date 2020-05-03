@@ -13,7 +13,8 @@
 			"Timeout": 60,
 			"Environment": {
 				"Variables": {
-					"STAGE": { "Ref": "StageParam" }
+					"STAGE": { "Ref": "StageParam" },
+					"EMAIL_TO": { "Ref": "EmailToParam" }
 				}
 			}
 		}

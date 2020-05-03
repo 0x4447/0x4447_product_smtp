@@ -8,14 +8,24 @@
                     "Parameters": [
                         "CodePipelineArtifactsParam",
                         "GitHubTokenParam",
-                        "StageParam"
+                        "StageParam",
+                        "AutoDeployParam"
+                    ]
+                },
+                {
+                    "Label": {
+                        "default": "Application"
+                    },
+                    "Parameters": [
+                        "EmailToParam"
                     ]
                 }
             ],
             "ParameterLabels": {
                 "CodePipelineArtifactsParam": { "default": "CodePipeline Artifacts Bucket" },
                 "GitHubTokenParam": { "default": "GitHub Token" },
-                "StageParam": { "default": "Stage" }
+                "StageParam": { "default": "Stage" },
+                "AutoDeployParam": { "default": "Auto Deployment" }
             }
         }
 }

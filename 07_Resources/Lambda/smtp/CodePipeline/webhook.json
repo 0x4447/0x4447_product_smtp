@@ -1,6 +1,7 @@
 {
 	"CodePipelineSMTPWebhook": {
 		"Type": "AWS::CodePipeline::Webhook",
+		"Condition": "GitHubAutodeploymentCondition",
 		"Properties": {
 			"Authentication": "GITHUB_HMAC",
 			"AuthenticationConfiguration": {
