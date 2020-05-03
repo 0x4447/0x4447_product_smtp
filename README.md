@@ -32,6 +32,19 @@ All project resources can be found [here](https://github.com/topics/0x4447-produ
 
 You'll have to configure SES to allow it to send emails out. Either by confirming a domain that you own, or individual emails. In this case it should be just yours.
 
+# Documentation
+
+To send an email, you have to structure the S3 object as seen bellow:
+
+```json
+{
+    "name": "PUT_A_NAME",
+    "email": "PUT_A_VALID_EMAIL",
+    "subject": "THE_SUBJECT",
+    "body": "THE_BODY"
+}
+```
+
 # Pricing
 
 All resources deployed via this stack will potentially cost you money. But you'd have to do the following for this to happen:
