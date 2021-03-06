@@ -38,10 +38,26 @@ To send an email, you have to structure the S3 object as seen bellow:
 
 ```json
 {
-    "name": "PUT_A_NAME",
-    "email": "PUT_A_VALID_EMAIL",
-    "subject": "THE_SUBJECT",
-    "body": "THE_BODY"
+    "subject": "Subject",
+    "body": "Body of the email",
+    "emails": {
+        "to": {
+            "name": "First and last name"
+            "email": "name@example.com"
+        },
+        "reply_to": {
+            "name": "First and last name",
+            "email": "name@example.com"
+        }
+    },
+    "icalEvent": "Optional",
+    "attachments": [ 
+        {
+            "filename": "OPTIONAL.pdf",
+            "content": "A_BUFFER.toString('base64')",
+            "encoding": "base64"
+        }
+    ]
 }
 ```
 
